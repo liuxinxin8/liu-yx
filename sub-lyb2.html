@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线咨询</title>
+    <link rel="stylesheet" href="style/top-bottom.css" type="text/css"/>
+    <link rel="stylesheet" href="style/css-zx.css" type="text/css"/>
+    <link rel="stylesheet" href="style/css-zx-lyfk.css" type="text/css"/>
+    <link rel="stylesheet" href="style/lrtk.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<header class="o_h">
+    <div id="top">
+    <div id="logo">
+        <span>迎新网</span>
+    </div>
+    <div id="hxci" class="f_r">
+        <p>哈尔滨信息工程欢迎你</p>
+        <p>Welcome to HXCI</p>
+    </div>
+    <nav>
+        <ul class="o_h">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="sub-wsdl.html">网上登录</a></li>
+            <li><a href="sub-rxxz.html">入学须知</a></li>
+            <li><a href="#">了解哈信息</a></li>
+            <li><a href="#">学在哈信息</a></li>
+            <li><a href="#">帮困助学</a></li>
+            <li><a href="sub-lyb.html">在线咨询</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+<main>
+    <!--回到顶部-->
+    <script type="text/javascript" src="js/backtop.js"></script>
+    <div id="hd" class="o_h">
+        <aside class="f_l">
+            <dl class="lyzx" id="menu">
+                <dt>留言中心</dt>
+                <dd><a href="sub-lyb.html">常见问题</a><span>></span><div></div></dd>
+                <dd><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1621115870&site=qq&menu=yes">
+                    QQ咨询</a><span>></span><div></div></dd>
+                <dd><a href="sub-lyb2.html">我要留言</a><span>></span><div></div></dd>
+                <dd><a href="sub-lyb3.html">联系电话</a><span>></span><div></div></dd>
+            </dl>
+        </aside>
+        <script src="js/juheweb.js"></script>                <!--随屏幕动-->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#menu').stickyfloat({ duration: 400 });
+            });
+        </script>
+        <article class="f_l">
+            <form action="" method="post">
+                <dl>
+                    <dt><h1>留言反馈</h1></dt>
+                    <dd>
+                        <label for="u_bt"><strong class="red">* </strong>留言标题：</label>
+                        <input type="text" id="u_bt" name="u_bt" maxlength="15" required >
+                        <span><strong class="red">* </strong>请输入十五个字以内</span>
+                    </dd>
+                    <dd>
+                        <label for="u_name"><strong class="red">* </strong> 用 户 名：</label>
+                        <input type="text" id="u_name" name="u_name" placeholder="请输入你的姓名"
+                               required>
+                        <span><strong class="red">* </strong>请输入真实姓名</span>
+                    </dd>
+                    <dd>
+                        <label for="u_num">手机号码：</label>
+                        <input type="tel" id="u_num" name="u_num" maxlength="11"  pattern="^\d{11,}$">
+                        <span><strong class="red">* </strong>选填</span>
+                    </dd>
+                    <dd>
+                        <label for="u_qq">Q Q号码：</label>
+                        <input type="tel" id="u_qq" name="u_qq">
+                        <span><strong class="red">* </strong>选填</span>
+                    </dd>
+                    <dd>
+                        <label for="u_email">电子邮件：</label>
+                        <input type="email" id="u_email" name="u_email" placeholder="例：01@.qq.com">
+                        <span><strong class="red">* </strong>请输入电子邮件</span>
+                    </dd>
+                    <dd>
+                        <label for="u_school">  学  历 ：</label>
+                        <select name="u_school" id="u_school">
+                                <option value="">请选择你的学历</option>
+                                <option value="">本科</option>
+                                <option value="">专科</option>
+                        </select>
+                    </dd>
+                    <dd class="dhs">
+                        <label for="u_word"><strong class="red">* </strong>留言内容：</label>
+                        <textarea id="u_word"></textarea>
+                    </dd>
+                    <dd class="login">
+                        <input class="int_login" type="submit" value="提交"/>
+                        <input class="int_reset" type="reset" value="重写"/>
+                    </dd>
+                </dl>
+            </form>
+        </article>
+    </div>
+</main>
+<footer>
+    <div id="f-list">
+        <span>版权所有© 刘鑫鑫</span>
+        <span>地址：黑龙江省哈尔滨市宾县宾西镇宾西大学城9号</span>
+    </div>
+</footer>
+</body>
+</html>

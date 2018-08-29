@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>刘鑫鑫</title>
+    <link rel="stylesheet" href="style/top-bottom.css" type="text/css"/>
+    <link rel="stylesheet" href="style/css-index.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <link rel="stylesheet" href="style/lrtk.css" type="text/css"/>
+</head>
+<body>
+<header class="o_h">
+    <div id="top">
+    <div id="logo">
+        <span>迎新网</span>
+    </div>
+    <div id="hxci" class="f_r">
+        <p>哈尔滨信息工程欢迎你</p>
+        <p>Welcome to HXCI</p>
+    </div>
+    <nav>
+        <ul class="o_h">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="sub-wsdl.html">网上登录</a></li>
+            <li><a href="sub-rxxz.html">入学须知</a></li>
+            <li><a href="#">了解哈信息</a></li>
+            <li><a href="#">学在哈信息</a></li>
+            <li><a href="#">帮困助学</a></li>
+            <li><a href="sub-lyb.html">在线咨询</a></li>
+        </ul>
+    </nav>
+        </div>
+</header>
+<main>
+    <!--回到顶部-->
+    <script type="text/javascript" src="js/backtop.js"></script>
+    <div class="dong">
+        <marquee behavior="left" direction="10">
+            <span class="red">友情提醒: </span>
+            为避免影响到9月4、5日的正常报到，2018级新生敬请于报到前（截止至
+            2017年9月4日）缴清学杂费等。
+        </marquee>
+      <ul class="m-list1">
+          <li><img src="image/banner2.jpg" alt=""/></li>
+          <li><img src="image/banner1.png" alt=""/></li>
+          <li><img src="image/banner3.png" alt=""/></li>
+          <li><img src="image/banner4.png" alt=""/></li>
+          <li><img src="image/banner5.png" alt=""/></li>
+      </ul>
+        <nav class="nav-roundslide">
+        <a class="prev" href="#">
+            <span class="icon-wrap"></span>
+            <h3>上一页</h3>
+        </a>
+        <a class="next" href="#">
+            <span class="icon-wrap"></span>
+            <h3>下一页</h3>
+        </a>
+    </nav>
+    </div>
+    <script type="text/javascript">
+        jQuery(".dong").hover(function(){
+                    jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.9) }
+                ,function(){ jQuery(this).find(".prev,.next").fadeOut() });
+        jQuery(".dong").slide({ mainCell:".m-list1",
+            effect: "leftLoop", autoPlay:true, delayTime:400,trigger:"click",pnLoop:true});
+    </script>
+    <ul class="bd">
+        <li>
+            <dl class="bdsm">
+                <dt>报到说明</dt>
+                <div class="layer">
+                <dd>1、网上报到：须在到校前完成网上报到；（密码详见登录说明）</dd>
+                <dd> 2、现场报到：请按录取通知书要求在指定时间内到校办理现场报到相关手续。
+                    （报道详见入学须知）</dd>
+                <dd><a href="sub-wsdl.html">网上登录</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl class="xszn">
+                <dt>新生指南</dt>
+                <div class="layer">
+                <dd><a href="nr-bdxz.html">哈尔滨信息工程2018级新生报到须知</a></dd>
+                <dd><a href="nr-jfxz.html">2018级新生缴费须知</a></dd>
+                <dd><a href="#">致家长的一封信</a></dd>
+                <dd><a href="#">学生信息采集填写说明</a></dd>
+                <dd><a href="#">大学生新生入伍宣传单</a></dd>
+                </div>
+            </dl>
+        </li>
+    </ul>
+    <ul class="m-yqlj o_h">
+        <li>校内友情链接</li>
+        <li><a href="http://www.hxci.com.cn/">哈尔滨信息工程学院</a></li>
+        <li><a href="#">哈尔滨华夏中等专业学校</a></li>
+        <li><a href="#">黑龙江省招生考试信息港</a></li>
+        <li><a href="#">教务处</a></li>
+        <li><a href="#">学生处</a></li>
+        <li><a href="#">图书馆</a></li>
+    </ul>
+</main>
+<footer>
+    <div id="f-list">
+    <span>版权所有© 刘鑫鑫</span>
+    <span>地址：黑龙江省哈尔滨市宾县宾西镇宾西大学城9号</span>
+    </div>
+</footer>
+</body>
+</html>
